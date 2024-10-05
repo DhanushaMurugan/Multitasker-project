@@ -20,16 +20,16 @@ function MenuPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="p-8 bg-white backdrop-blur-sm rounded-xl shadow-lg transition-transform transform hover:scale-105">
               <h2 className="text-2xl font-playfair text-gray-700 mb-4">
-                Task Scheduler
+                QR Generator
               </h2>
               <img
-                src={task}
-                alt="Task Scheduler"
+                src={qrimg}
+                alt="QR Generator"
                 className="w-2/3 mx-auto mb-6"
               />
               <button
-                onClick={() => navigate("/taskHomePage")}
-                className="w-full p-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition duration-300 text-xl font-semibold"
+                onClick={() => navigate("/qrGenerator")}
+                className="w-full p-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition duration-300 text-lg font-semibold"
               >
                 Open
               </button>
@@ -51,19 +51,18 @@ function MenuPage() {
                 Open
               </button>
             </div>
-
             <div className="p-8 bg-white backdrop-blur-sm rounded-xl shadow-lg transition-transform transform hover:scale-105">
               <h2 className="text-2xl font-playfair text-gray-700 mb-4">
-                QR Generator
+                Task Scheduler
               </h2>
               <img
-                src={qrimg}
-                alt="QR Generator"
+                src={task}
+                alt="Task Scheduler"
                 className="w-2/3 mx-auto mb-6"
               />
               <button
-                onClick={() => navigate("/qrGenerator")}
-                className="w-full p-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition duration-300 text-lg font-semibold"
+                onClick={() => navigate("/taskHomePage")}
+                className="w-full p-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition duration-300 text-xl font-semibold"
               >
                 Open
               </button>

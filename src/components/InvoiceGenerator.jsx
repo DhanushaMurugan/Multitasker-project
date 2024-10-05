@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import { DocumentTextIcon } from "@heroicons/react/24/outline";
+
 import { useNavigate } from "react-router-dom";
 import { ArrowUturnLeftIcon } from "@heroicons/react/24/outline";
 
@@ -61,9 +61,7 @@ const InvoiceGenerator = () => {
     <div className="font-playfair max-w-4xl mx-auto  bg-gray-50">
       <div className="flex justify-between shadow-md">
         <div className="  flex items-center pt-2 pb-2">
-          <div>
-            <DocumentTextIcon class="h-7 w-7 ml-5 text-black" />
-          </div>
+          
           <div>
             <h3 className="text-2xl font-bold text-center text-black ml-1">
               Invoice Generator
@@ -186,9 +184,9 @@ const InvoiceGenerator = () => {
         <section className="bg-white p-6 rounded-lg shadow-md mb-6">
           <h4 className="text-2xl font-semibold mb-4">Summary</h4>
           <div className="space-y-2">
-            <div>Total Amount: ${total.amount.toFixed(2) || 0}</div>
-            <div>Taxes (10%): ${total.taxes.toFixed(2) || 0}</div>
-            <div>Total Payable: ${total.payable.toFixed(2) || 0}</div>
+            <div>Total Amount: {total.amount.toFixed(2) || 0}</div>
+            <div>Taxes (10%): {total.taxes.toFixed(2) || 0}</div>
+            <div>Total Payable: {total.payable.toFixed(2) || 0}</div>
           </div>
         </section>
 
