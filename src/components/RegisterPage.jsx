@@ -86,12 +86,12 @@ const Register = () => {
           <div className="mt-6 text-center">
             <p className="text-gray-600">
               Already have an account?{" "}
-              <a
+              <p
                 onClick={() => navigate("/loginPage")}
                 className="text-black cursor-pointer hover:underline"
               >
                 <b>Login here</b>
-              </a>
+              </p>
             </p>
           </div>
         </div>
